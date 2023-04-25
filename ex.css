@@ -41,7 +41,7 @@ body {
     text-align: center;
   }
   .lable{
-    color: red;
+    color: rgb(0, 0, 0);
     font-size: xx-large;
     text-align: center;
     -ms-flex-item-align: center;
