@@ -10,7 +10,7 @@ function repeatvalue() {
  
 var total = (q1 * 0.5) + (q2 * 0.5) + (q3 * 0.5) + (q4 * 0.5) + (q5 * 0.5) +(q6 * 0.5);
 
-    document.getElementById("label").innerHTML= total  + "KG";
+    document.getElementById("label").innerHTML= "ನಿಮ್ಮ ಗ್ರಾಮದಲ್ಲಿ ತಿಂಗಳಿಗೆ ಸರಾಸರಿಯಾಗಿ ಉತ್ಪಾದನೆಯಾಗುವ ತ್ಯಾಜ್ಯ  " + total  + " KG";
  }
  /*
 
