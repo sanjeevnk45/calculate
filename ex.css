@@ -23,6 +23,8 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #45a049;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container {
@@ -32,15 +34,11 @@ input[type=submit]:hover {
   margin: auto;
   width: 60%;
 }
-.button {
-    background-color: #2d8ce6;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-  }
+.display {
+  padding: 20px;
+  font-weight: bold;
+  font-size: large;
+  margin: auto;
+  width: 80%;
+  color: red;
+}
