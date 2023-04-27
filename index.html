@@ -61,34 +61,33 @@
         </script>
 </head>
 <body>
-    <div class="container">
-       <center><h2>ನಮ್ಮೂರ ತ್ಯಾಜ್ಯದ ಬಗ್ಗೆ ನನಗೇನು ತಿಳಿದಿದೆ?</h2> </center> 
-    </div>
+
+  <div class="container">
+    <center><h2>ನಮ್ಮೂರ ತ್ಯಾಜ್ಯದ ಬಗ್ಗೆ ನನಗೇನು ತಿಳಿದಿದೆ?</h2> </center> 
     <form name="myForm" action="#" onsubmit="validateForm()" method="post">
-    <div class="flex-container">
-        <ul class="flex-container">
-            <li class="flex-item">1.ನಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಮನೆಗಳಿವೆ: 
-                <input type="text" id="q1" name="q1" required>
-              2. ನಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಅಂಗಡಿಗಳಿವೆ: 
-              <input type="text" id="q2" name="q2"required  >
-              
-            </li><br>
-            <li class="flex-item">3.ನಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಹೋಟೆಲ್‌ ಗಳಿವೆ : <input type="text" id="q3" name="q3" required>
-              4. ನಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ದೇವಸ್ಥಾನಗಳಿವೆ: <input type="text" id="q4"name="q4" required >
-            </li><br>
-            <li class="flex-item"> 5. ನಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಸಮುದಾಯ ಭವನ/ ಕಲ್ಯಾಣ ಮಂಟಪಗಳಿವೆ: <input type="text" id="q5" name="q5" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </li><br>
-           <li class="flex-item"> 6. ನಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಶಾಲೆ / ಅಂಗನವಾಡಿಗಳಿವೆ :<input type="text" id="q6" name="q6" required ></li>
-          </ul>
-  <br>
-  </div><br>
+      <label for="fname">1.ನಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಮನೆಗಳಿವೆ:</label>
+      <input type="text" id="q1" name="q1" placeholder="ಎಷ್ಟು ಮನೆಗಳಿವೆ ಎಂಬುದನ್ನು ನಮೂದಿಸಿ" required>
+  
+      <label for="lname"> 2. ನಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಅಂಗಡಿಗಳಿವೆ: </label>
+      <input type="text" id="q2" name="q2" required >
+
+      <label for="lname"> 3.ನಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಹೋಟೆಲ್‌ ಗಳಿವೆ : </label>
+      <input type="text" id="q3" name="q3" required>
+      <label for="lname"> 4. ನಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ದೇವಸ್ಥಾನಗಳಿವೆ:</label>
+      <input type="text" id="q4"name="q4" required >
+  
+      <label for="lname">  5. ನಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಸಮುದಾಯ ಭವನ/ ಕಲ್ಯಾಣ ಮಂಟಪಗಳಿವೆ: </label>
+      <input type="text" id="q5" name="q5" required>
+      <label for="lname"> 6. ನಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಶಾಲೆ / ಅಂಗನವಾಡಿಗಳಿವೆ :</label>
+      <input type="text" id="q6" name="q6" required >
+  
+      <input type="submit" value="Submit">
+    </form>
+  </div>
   <div class="lable">
     <label id = "label"></label>
   </div>
-  <br><br>
-  <div class="container">
-    <center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="submit" class="button" value="Calculate" /></center> 
- </div>
+  <br>
 
 </form>
 </div>

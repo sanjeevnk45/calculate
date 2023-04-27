@@ -1,50 +1,36 @@
-body {
-    background-color: rgb(190, 175, 169);
-  }
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
 
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
 
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
+input[type=submit]:hover {
+  background-color: #45a049;
+}
 
-
-.flex-container {
-    /* We first create a flex layout context */
-    display: flex;
-    
-    /* Then we define the flow direction 
-       and if we allow the items to wrap 
-     * Remember this is the same as:
-     * flex-direction: row;
-     * flex-wrap: wrap;
-     */
-    flex-flow: row wrap;
-    
-    /* Then we define how is distributed the remaining space */
-
-   /* justify-content: space-around; */
-    
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
-  
-  .flex-item {
-    background: rgb(135, 216, 110);
-    padding: 5px;
-    width: 1100px;
-    height: 100px;
-    margin-top: 10px;
-   
-    line-height: 150px;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    font-size: large;
-    text-align: center;
-  }
-  .lable{
-    color: rgb(0, 0, 0);
-    font-size: xx-large;
-    text-align: center;
-    -ms-flex-item-align: center;
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: auto;
+  width: 60%;
 }
 .button {
     background-color: #2d8ce6;
