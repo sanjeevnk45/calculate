@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="grid.css">
+<head>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+    }
+    
+    .grid-item {
+      background-color: #f2f2f2;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item">
+        <div class="container">
+            <center><h3>ನಿಮ್ಮ ಗ್ರಾಮದಲ್ಲಿ ತಿಂಗಳಿಗೆ ಸರಾಸರಿಯಾಗಿ ಎಷ್ಟು ತ್ಯಾಜ್ಯ ಉತ್ಪತ್ತಿಯಾಗುತ್ತದೆ ಎಂದು ತಿಳಿದುಕೊಳ್ಳಲು ಈ ಕೆಳಗೆ ಕೊಟ್ಟಿರುವ ಪ್ರಶ್ನೆಗಳನ್ನು ಉತ್ತರಿಸಿ </h3> </center> 
+            <form name="myForm" action="#" onsubmit="validateForm()" method="post">
+              <label for="fname">1.ನಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಮನೆಗಳಿವೆ ?</label>
+              <input type="text" id="q1" name="q1" placeholder="ನಿಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಮನೆಗಳಿವೆ ಎಂಬುದನ್ನು ನಮೂದಿಸಿ" required>
+          
+              <label for="lname"> 2. ನಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಅಂಗಡಿಗಳಿವೆ ?</label>
+              <input type="text" id="q2" name="q2" placeholder="ನಿಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಅಂಗಡಿಗಳಿವೆ ಎಂಬುದನ್ನು ನಮೂದಿಸಿ" required >
+        
+              <label for="lname"> 3.ನಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಹೋಟೆಲ್‌ ಗಳಿವೆ ?</label>
+              <input type="text" id="q3" name="q3"placeholder="ನಿಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಹೋಟೆಲ್‌ಗಳಿವೆ  ಎಂಬುದನ್ನು ನಮೂದಿಸಿ" required>
+              <label for="lname"> 4. ನಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ದೇವಸ್ಥಾನಗಳಿವೆ ?</label>
+              <input type="text" id="q4"name="q4" placeholder="ನಿಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ದೇವಸ್ಥಾನಗಳಿವೆ ಎಂಬುದನ್ನು ನಮೂದಿಸಿ" required >
+          
+              <label for="lname">  5. ನಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಸಮುದಾಯ ಭವನ/ ಕಲ್ಯಾಣ ಮಂಟಪಗಳಿವೆ ?</label>
+              <input type="text" id="q5" name="q5" placeholder="ನಿಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಸಮುದಾಯ ಭವನ/ ಕಲ್ಯಾಣ ಮಂಟಪಗಳಿವೆ ಎಂಬುದನ್ನು ನಮೂದಿಸಿ"  required>
+              <label for="lname"> 6. ನಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಶಾಲೆ / ಅಂಗನವಾಡಿಗಳಿವೆ ?</label>
+              <input type="text" id="q6" name="q6" placeholder="ನಿಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಸಮುದಾಯ ಶಾಲೆ / ಅಂಗನವಾಡಿಗಳಿವೆ ಎಂಬುದನ್ನು ನಮೂದಿಸಿ" required >
+          <div class="center_item">
+            <input type="submit" value="Submit">
+          </div>
+              
+            </form>
+            <div class="display">
+            <label id = "label"></label>
+            </div>
+          </div>
+          <div><h2>hi hello</h2></div>
+    </div>
+     <div class="grid-item">
+        <div class="container">
+            <center><h3>ನಿಮ್ಮ ಗ್ರಾಮದಲ್ಲಿ ತಿಂಗಳಿಗೆ ಸರಾಸರಿಯಾಗಿ ಎಷ್ಟು ತ್ಯಾಜ್ಯ ಉತ್ಪತ್ತಿಯಾಗುತ್ತದೆ ಎಂದು ತಿಳಿದುಕೊಳ್ಳಲು ಈ ಕೆಳಗೆ ಕೊಟ್ಟಿರುವ ಪ್ರಶ್ನೆಗಳನ್ನು ಉತ್ತರಿಸಿ </h3> </center> 
+            <form name="myForm" action="#" onsubmit="validateForm()" method="post">
+              <label for="fname">1.ನಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಮನೆಗಳಿವೆ ?</label>
+              <input type="text" id="q1" name="q1" placeholder="ನಿಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಮನೆಗಳಿವೆ ಎಂಬುದನ್ನು ನಮೂದಿಸಿ" required>
+          
+              <label for="lname"> 2. ನಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಅಂಗಡಿಗಳಿವೆ ?</label>
+              <input type="text" id="q2" name="q2" placeholder="ನಿಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಅಂಗಡಿಗಳಿವೆ ಎಂಬುದನ್ನು ನಮೂದಿಸಿ" required >
+        
+              <label for="lname"> 3.ನಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಹೋಟೆಲ್‌ ಗಳಿವೆ ?</label>
+              <input type="text" id="q3" name="q3"placeholder="ನಿಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಹೋಟೆಲ್‌ಗಳಿವೆ  ಎಂಬುದನ್ನು ನಮೂದಿಸಿ" required>
+              <label for="lname"> 4. ನಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ದೇವಸ್ಥಾನಗಳಿವೆ ?</label>
+              <input type="text" id="q4"name="q4" placeholder="ನಿಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ದೇವಸ್ಥಾನಗಳಿವೆ ಎಂಬುದನ್ನು ನಮೂದಿಸಿ" required >
+          
+              <label for="lname">  5. ನಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಸಮುದಾಯ ಭವನ/ ಕಲ್ಯಾಣ ಮಂಟಪಗಳಿವೆ ?</label>
+              <input type="text" id="q5" name="q5" placeholder="ನಿಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಸಮುದಾಯ ಭವನ/ ಕಲ್ಯಾಣ ಮಂಟಪಗಳಿವೆ ಎಂಬುದನ್ನು ನಮೂದಿಸಿ"  required>
+              <label for="lname"> 6. ನಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಶಾಲೆ / ಅಂಗನವಾಡಿಗಳಿವೆ ?</label>
+              <input type="text" id="q6" name="q6" placeholder="ನಿಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಸಮುದಾಯ ಶಾಲೆ / ಅಂಗನವಾಡಿಗಳಿವೆ ಎಂಬುದನ್ನು ನಮೂದಿಸಿ" required >
+          <div class="center_item">
+            <input type="submit" value="Submit">
+          </div>
+              
+            </form>
+            <div class="display">
+            <label id = "label"></label>
+            </div>
+          </div>
+    </div>
+  </div>
+ 
+</body>
+</html>

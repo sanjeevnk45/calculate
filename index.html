@@ -1,94 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
- 
-    <!--<script src="script.js"></script> -->
-    <link rel="stylesheet" href="ex.css">
-
-<!-- calculation -->
+<html>
+    <link rel="stylesheet" href="grid1.css">
+    <!-- calculation -->
 <script>
-        function validateForm() {
-            event.preventDefault();
-          var q1 = document.forms["myForm"]["q1"].value;
-          var q2 = document.forms["myForm"]["q2"].value;
-          var q3 = document.forms["myForm"]["q3"].value;
-          var q4 = document.forms["myForm"]["q4"].value;
-          var q5 = document.forms["myForm"]["q5"].value;
-          var q6 = document.forms["myForm"]["q6"].value;
-          if (isNaN(q1))  
-          {
-            alert("Enter only number");
-            return false;
-          } 
-         if (isNaN(q2)) 
-          {
-            alert("Enter only number");
-            return false;
-          } 
-          if (isNaN(q3)) 
-          {
-            alert("Enter only number");
-            return false;
-          } 
-          if (isNaN(q4)) 
-          {
-            alert("Enter only number");
-            return false;
-          } 
-          if (isNaN(q5)) 
-          {
-            alert("Enter only number");
-            return false;
-          } 
-          if (isNaN(q6)) 
-          {
-            alert("Enter only number");
-            return false;
+    function validateForm() {
+        event.preventDefault();
+      var q1 = document.forms["myForm"]["q1"].value;
+      var q2 = document.forms["myForm"]["q2"].value;
+      var q3 = document.forms["myForm"]["q3"].value;
+      var q4 = document.forms["myForm"]["q4"].value;
+      var q5 = document.forms["myForm"]["q5"].value;
+      var q6 = document.forms["myForm"]["q6"].value;
+      if (isNaN(q1))  
+      {
+        alert("Enter only number");
+        return false;
+      } 
+     if (isNaN(q2)) 
+      {
+        alert("Enter only number");
+        return false;
+      } 
+      if (isNaN(q3)) 
+      {
+        alert("Enter only number");
+        return false;
+      } 
+      if (isNaN(q4)) 
+      {
+        alert("Enter only number");
+        return false;
+      } 
+      if (isNaN(q5)) 
+      {
+        alert("Enter only number");
+        return false;
+      } 
+      if (isNaN(q6)) 
+      {
+        alert("Enter only number");
+        return false;
 
-          } 
-          else
-          {
-            var total = (q1 * 10) + (q2 * 30) + (q3 * 40) + (q4 * 0.5) + (q5 * 100) +(q6 * 0.5);
+      } 
+      else
+      {
+        var total = (q1 * 10) + (q2 * 30) + (q3 * 40) + (q4 * 15) + (q5 * 100) +(q6 * 20);
 
-            document.getElementById("label").innerHTML= "ನಿಮ್ಮ ಗ್ರಾಮದಲ್ಲಿ ತಿಂಗಳಿಗೆ ಸರಾಸರಿಯಾಗಿ ಉತ್ಪಾದನೆಯಾಗುವ ತ್ಯಾಜ್ಯ  " + total  + " KG";
-          }
+        document.getElementById("label").innerHTML= "ನಿಮ್ಮ ಗ್ರಾಮದಲ್ಲಿ ತಿಂಗಳಿಗೆ ಅಂದಾಜು ಉತ್ಪಾದನೆಯಾಗುವ ತ್ಯಾಜ್ಯ  " + total  + " KG";
+      }
 
-        }
-        </script>
+    }
+    </script>
+<head>
+  <style>
+    .container {
+      display: flex;
+     
+    }
+    
+    .column1 {
+      flex: 1;
+      background: radial-gradient(circle, #fbff00, #16ee94);
+      padding: 20px;
+      text-align: center;
+      width: 30%;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+   
+    }
+    .column2 {
+     
+      background-color: #f2f2f2;
+      padding: 20px;
+      text-align: center;
+      width: 60%;
+      font-size: small;
+    }
+
+  </style>
 </head>
 <body>
-
   <div class="container">
-    <center><h3>ನಿಮ್ಮ ಗ್ರಾಮದಲ್ಲಿ ತಿಂಗಳಿಗೆ ಸರಾಸರಿಯಾಗಿ ಎಷ್ಟು ತ್ಯಾಜ್ಯ ಉತ್ಪತ್ತಿಯಾಗುತ್ತದೆ ಎಂದು ತಿಳಿದುಕೊಳ್ಳಲು ಈ ಕೆಳಗೆ ಕೊಟ್ಟಿರುವ ಪ್ರಶ್ನೆಗಳನ್ನು ಉತ್ತರಿಸಿ </h3> </center> 
-    <form name="myForm" action="#" onsubmit="validateForm()" method="post">
-      <label for="fname">1.ನಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಮನೆಗಳಿವೆ ?</label>
-      <input type="text" id="q1" name="q1" placeholder="ನಿಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಮನೆಗಳಿವೆ ಎಂಬುದನ್ನು ನಮೂದಿಸಿ" required>
-  
-      <label for="lname"> 2. ನಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಅಂಗಡಿಗಳಿವೆ ?</label>
-      <input type="text" id="q2" name="q2" placeholder="ನಿಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಅಂಗಡಿಗಳಿವೆ ಎಂಬುದನ್ನು ನಮೂದಿಸಿ" required >
-
-      <label for="lname"> 3.ನಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಹೋಟೆಲ್‌ ಗಳಿವೆ ?</label>
-      <input type="text" id="q3" name="q3"placeholder="ನಿಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಹೋಟೆಲ್‌ಗಳಿವೆ  ಎಂಬುದನ್ನು ನಮೂದಿಸಿ" required>
-      <label for="lname"> 4. ನಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ದೇವಸ್ಥಾನಗಳಿವೆ ?</label>
-      <input type="text" id="q4"name="q4" placeholder="ನಿಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ದೇವಸ್ಥಾನಗಳಿವೆ ಎಂಬುದನ್ನು ನಮೂದಿಸಿ" required >
-  
-      <label for="lname">  5. ನಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಸಮುದಾಯ ಭವನ/ ಕಲ್ಯಾಣ ಮಂಟಪಗಳಿವೆ ?</label>
-      <input type="text" id="q5" name="q5" placeholder="ನಿಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಸಮುದಾಯ ಭವನ/ ಕಲ್ಯಾಣ ಮಂಟಪಗಳಿವೆ ಎಂಬುದನ್ನು ನಮೂದಿಸಿ"  required>
-      <label for="lname"> 6. ನಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಶಾಲೆ / ಅಂಗನವಾಡಿಗಳಿವೆ ?</label>
-      <input type="text" id="q6" name="q6" placeholder="ನಿಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಸಮುದಾಯ ಶಾಲೆ / ಅಂಗನವಾಡಿಗಳಿವೆ ಎಂಬುದನ್ನು ನಮೂದಿಸಿ" required >
-  <div class="center_item">
-    <input type="submit" value="Submit">
-  </div>
+    <div class="column1">
+        <center><h3>ನಿಮ್ಮ ಗ್ರಾಮದಲ್ಲಿ ತಿಂಗಳಿಗೆ ಸರಾಸರಿಯಾಗಿ ಎಷ್ಟು ತ್ಯಾಜ್ಯ ಉತ್ಪತ್ತಿಯಾಗುತ್ತದೆ ಎಂದು ತಿಳಿದುಕೊಳ್ಳಲು ಈ ಕೆಳಗೆ ಕೊಟ್ಟಿರುವ ಪ್ರಶ್ನೆಗಳನ್ನು ಉತ್ತರಿಸಿ </h3> </center> 
+        <form name="myForm" action="#" onsubmit="validateForm()" method="post">
+          <label for="fname">1.ನಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಮನೆಗಳಿವೆ ?</label>
+          <input type="text" id="q1" name="q1" placeholder="ನಿಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಮನೆಗಳಿವೆ ಎಂಬುದನ್ನು ನಮೂದಿಸಿ" required>
       
-    </form>
-    <div class="display">
-    <label id = "label"></label>
+          <label for="lname"> 2. ನಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಅಂಗಡಿಗಳಿವೆ ?</label>
+          <input type="text" id="q2" name="q2" placeholder="ನಿಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಅಂಗಡಿಗಳಿವೆ ಎಂಬುದನ್ನು ನಮೂದಿಸಿ" required >
+    
+          <label for="lname"> 3.ನಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಹೋಟೆಲ್‌ ಗಳಿವೆ ?</label>
+          <input type="text" id="q3" name="q3"placeholder="ನಿಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಹೋಟೆಲ್‌ಗಳಿವೆ  ಎಂಬುದನ್ನು ನಮೂದಿಸಿ" required>
+          <label for="lname"> 4. ನಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ದೇವಸ್ಥಾನಗಳಿವೆ ?</label>
+          <input type="text" id="q4"name="q4" placeholder="ನಿಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ದೇವಸ್ಥಾನಗಳಿವೆ ಎಂಬುದನ್ನು ನಮೂದಿಸಿ" required >
+      
+          <label for="lname">  5. ನಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಸಮುದಾಯ ಭವನ/ ಕಲ್ಯಾಣ ಮಂಟಪಗಳಿವೆ ?</label>
+          <input type="text" id="q5" name="q5" placeholder="ನಿಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಸಮುದಾಯ ಭವನ/ ಕಲ್ಯಾಣ ಮಂಟಪಗಳಿವೆ ಎಂಬುದನ್ನು ನಮೂದಿಸಿ"  required>
+          <label for="lname"> 6. ನಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಶಾಲೆ / ಅಂಗನವಾಡಿಗಳಿವೆ ?</label>
+          <input type="text" id="q6" name="q6" placeholder="ನಿಮ್ಮ ಊರಲ್ಲಿ ಎಷ್ಟು ಸಮುದಾಯ ಶಾಲೆ / ಅಂಗನವಾಡಿಗಳಿವೆ ಎಂಬುದನ್ನು ನಮೂದಿಸಿ" required >
+      <div class="center_item">
+        <input type="submit" value="Submit">
+      </div>
+          
+        </form>
+        <div class="display">
+        <label id = "label"></label>
+        </div>
+    </div>
+    <div class="column2">
+        <center><h2>ಗ್ರಾಮದಲ್ಲಿ ತಿಂಗಳಿಗೆ ಸರಾಸರಿಯಾಗಿ ಉತ್ಪತ್ತಿಯಾಗುತ್ತಿರುವ ತ್ಯಾಜ್ಯ </h2> </center> 
+        <ul>
+           
+          <li>
+            <h3>ಒಂದು ಅಂಗಡಿಗೆ ಉತ್ಪತ್ತಿಯಾಗುತ್ತಿರುವ ತ್ಯಾಜ್ಯ 30 KG </h3>
+          </li>  
+          <li>
+            <h3>ಒಂದು ಹೋಟೆಲ್‌ಗೆ ಉತ್ಪತ್ತಿಯಾಗುತ್ತಿರುವ ತ್ಯಾಜ್ಯ 40 KG </h3>
+          </li>  
+          <li>
+            <h3>ಒಂದು ದೇವಸ್ಥಾನಕ್ಕೆ ಉತ್ಪತ್ತಿಯಾಗುತ್ತಿರುವ ತ್ಯಾಜ್ಯ 15 KG </h3>
+          </li>  
+          <li>
+            <h3>ಸಮುದಾಯ ಭವನ/ ಕಲ್ಯಾಣ ಮಂಟಪಕ್ಕೆ ಉತ್ಪತ್ತಿಯಾಗುತ್ತಿರುವ ತ್ಯಾಜ್ಯ 100 KG </h3>
+          </li> 
+          <li>
+            <h3>ಸಮುದಾಯ ಶಾಲೆ / ಅಂಗನವಾಡಿಗೆ ಉತ್ಪತ್ತಿಯಾಗುತ್ತಿರುವ ತ್ಯಾಜ್ಯ 20 KG </h3>
+          </li> 
+        
+        </ul>
+
+        
     </div>
   </div>
-
 </body>
 </html>
